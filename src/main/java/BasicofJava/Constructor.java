@@ -33,6 +33,11 @@ public class Constructor {
 	{
 		System.out.println("My location is : "+loc);
 	}
+	
+	public void mychanges()
+	{
+		System.out.println("mychnges");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
