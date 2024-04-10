@@ -39,6 +39,9 @@ public class Constructor {
 		System.out.println("mychnges");
 	}
 
+public void mergeconflictcheck()
+{}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Constructor c = new Constructor(2003);
