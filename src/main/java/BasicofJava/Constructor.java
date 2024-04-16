@@ -33,7 +33,7 @@ public class Constructor {
 	{
 		System.out.println("My location is : "+loc);
 	}
-	
+
 	public void mychanges()
 	{
 		System.out.println("mychnges");
