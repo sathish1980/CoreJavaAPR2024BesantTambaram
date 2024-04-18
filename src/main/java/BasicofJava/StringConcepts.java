@@ -5,6 +5,8 @@ public class StringConcepts {
 	String name = " Sathish kumar R ";
 	String name1 ="sathish kumar R";
 	
+	String filename = "file.txt";
+	
 	public void StringImplementation()
 	{
 		System.out.println(name);
@@ -55,11 +57,52 @@ public class StringConcepts {
 		String addvalue = "Besant";
 		name.format(age1, addvalue);
 	}
+	
+	
+	public void GetError() throws ArithmeticException
+	{
+		
+		throw new ArithmeticException("hi");
+		
+	}
+	
+	
+	public void Stringmutable()
+	{
+		StringBuffer sb = new StringBuffer("Sathish Besant");
+		System.out.println(sb);
+		System.out.println(sb.length());
+		sb.replace(1, 7, "ATHISH");
+		System.out.println(sb);
+		sb.reverse();
+		System.out.println(sb);
+		sb.insert(1, "Tambaram");
+		System.out.println(sb);
+		
+		
+	}
+	
+	public void StringmutableBuilder()
+	{
+		StringBuilder sb = new StringBuilder("Sathish Besant");
+		System.out.println(sb);
+		System.out.println(sb.length());
+		sb.replace(1, 7, "ATHISH");
+		System.out.println(sb);
+		sb.reverse();
+		System.out.println(sb);
+		sb.insert(1, "Tambaram");
+		System.out.println(sb);
+		
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringConcepts S = new StringConcepts();
-		S.StringImplementation();
+
+		//S.GetError();
+		S.StringmutableBuilder();
 	}
 
 }
