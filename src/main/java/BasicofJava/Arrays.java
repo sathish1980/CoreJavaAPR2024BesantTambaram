@@ -1,5 +1,7 @@
 package BasicofJava;
 
+import java.util.Scanner;
+
 public class Arrays {
 	
 	String name = "saathiishh";
@@ -11,7 +13,8 @@ public class Arrays {
 	
 	String[] Hotel= {"A2B","SVB"};
 	
-	
+	int[] getMyAge = new int[5]; // create a dynamic array
+			
 	public void getMyAge()
 	{
 		System.out.println(myage[0]);
@@ -36,11 +39,43 @@ public class Arrays {
 		
 	}
 	
+	public void GetDynamicArray()
+	{
+		for(int eachvalue :getMyAge)
+		{
+			System.out.println(eachvalue);
+		}
+		int i=0;
+		int totalIteration =getMyAge.length;
+		while(i<totalIteration)
+		{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your age: ");
+		int a = s.nextInt();
+		getMyAge[i]=a;
+		i++;
+		}
+		System.out.println("The End!!");
+		/*getMyAge[0]=a;
+		getMyAge[1]=5;
+		getMyAge[2]=6;
+		getMyAge[3]=7;
+		getMyAge[4]=8;
+		getMyAge[getMyAge.length-1] =a;*/
+		
+		System.out.println("************");
+		
+		for(int eachvalue :getMyAge)
+		{
+			System.out.println(eachvalue);
+		}
+	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Arrays A = new Arrays();
-		A.getMyAge();
+		A.GetDynamicArray();
 	}
 
 }
