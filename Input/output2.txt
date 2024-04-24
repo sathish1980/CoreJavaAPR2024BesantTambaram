@@ -1,3 +1,17 @@
 Hi this is sathish
 From Besant tecchnology
 Tambaram
+
+description	 	action		Locator		locatorValue
+Lauch the browser	launch		No		No
+EnterURL		GetURL		No		No
+ClickLoginPopup		Click		Xpath		//*[]
+ClickFrom		Click		Xpath		//*[]
+SelectFromLocation	SelectFromList	Xpath		//*[]
+ClickTo			click		id		inh
+SelectToLocation	SelectFromList  xpath		//*[]
+SelectDate		SelectDate	Xpath		//*[]
+ClickOnSearch		Click		Xpath		//*[]
+Wait for Sometime	WaitforVisible	Xpath		//*[]
+GettheTexttoValidate	GetText		xpath		//*[]
+ClosetheBrowser		Close		No		No	
