@@ -15,3 +15,15 @@ ClickOnSearch		Click		Xpath		//*[]
 Wait for Sometime	WaitforVisible	Xpath		//*[]
 GettheTexttoValidate	GetText		xpath		//*[]
 ClosetheBrowser		Close		No		No	
+
+
+1.To verify usr can able to login to the application with valid email and password -60%
+2.invalid email and valid password 
+3.valid email and invalid password
+4.invalid email and invalid password
+5.both are blank and try login
+6.valid phno and password -60%
+7.invalid phno and valid password
+8.valid phno and invalid password
+9.invalid phno and invalid password
+10.both are blank and try login
