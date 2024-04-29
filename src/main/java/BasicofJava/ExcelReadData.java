@@ -12,7 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class ExcelReadData {
-	String filePath = "C:\\Users\\kumar\\eclipse-workspace\\CoreJavaAPR2024BesantTambaram\\Input\\MakeMyTrip.xlsx";
+	String filePath = System.getProperty("user.dir")+"\\Input\\MakeMyTrip.xlsx";
 	
 	
 	public void ExcelRead() throws IOException

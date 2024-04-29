@@ -62,11 +62,72 @@ public class Conditions {
 		}
 	}
 
+	
+	public void getCourse(String course,int batchtiming)
+	{
+		int batchTime =10;
+		if(course.equalsIgnoreCase("Java")  || course.equalsIgnoreCase("Core Java") )
+		{
+			System.out.println("you have choosed java");
+			if(batchtiming==10)
+			{
+				System.out.println("The requested Batch is avaialble");
+			}
+			else
+			{
+				System.out.println("The requested Batch time is not avaialble");
+					
+			}
+		}
+		else if(course.equalsIgnoreCase("python"))
+		{
+			System.out.println("you have choosed python");
+			if(batchtiming==12)
+			{
+				System.out.println("The requested Batch is avaialble");
+			}
+			else
+			{
+				System.out.println("The requested Batch time is not avaialble");
+					
+			}
+		}
+		else
+		{
+			System.out.println("the given course is not avaialble");
+		}
+	}
+	
+	public void getAge(int age)
+	{
+		if(age>18)
+		{
+			System.out.println("you are a teenage person");
+		}
+	}
+	
+	public void getAgeusing(String name)
+	{
+		switch(name) {
+		case "sathish":
+			System.out.println("you are teenafe");
+			break;
+		case "kumar":
+			System.out.println("you are teenage+1");
+			break;
+		default:
+			System.out.println("incorrect number");
+			break;
+		}
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Conditions C= new Conditions();
 		C.TrafficSignal("red","bike",true);
 		C.FindGender("M");
+		C.getCourse("core java",10);
+		C.getAgeusing("kumar");
+		C.getAge(20);
 	}
 
 }
