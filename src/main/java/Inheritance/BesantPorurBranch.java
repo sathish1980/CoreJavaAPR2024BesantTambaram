@@ -2,11 +2,12 @@ package Inheritance;
 
 import java.util.Scanner;
 
-public class BesantTambarmBranch extends BesantBaseBranch{
+public class BesantPorurBranch extends BesantBaseBranch{
 	
-	static String branchName ="Besant Tambaram";
-	String[] CourseFees= {"Java-15000","C#-20000","SQL-13000","Testing-18000","Python-14000"};
-	BesantPorurBranch Bp = new BesantPorurBranch();
+	String branchName ="Besant Porur";
+	
+	String[] CourseFees= {"Java-14000","C#-22000","SQL-15000","Testing-19000","Python-12000"};
+	
 	public int GetCourseFees(String course)
 	{
 		for(String eachCourseFees : CourseFees)
@@ -36,15 +37,9 @@ public class BesantTambarmBranch extends BesantBaseBranch{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BesantTambarmBranch B = new BesantTambarmBranch();
+		BesantPorurBranch B = new BesantPorurBranch();
 		System.out.println(B.baseBranchName);
-		BesantPorurBranch Bp = new BesantPorurBranch();
-		try {
-			System.out.println(Bp.branchName);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		System.out.println(B.branchName);
 		Scanner userinput = new Scanner(System.in);
 		System.out.println("Enter the course name: ");
 		String coursename = userinput.nextLine();
