@@ -17,7 +17,7 @@ public class Swapa2Number {
         int a = num1;
         num1 = num2;
         num2 = a;
-
+//Thread.sleep(2000);
         System.out.println("After swapping:");
         System.out.println("num1 = " + num1);
         System.out.println("num2 = " + num2);

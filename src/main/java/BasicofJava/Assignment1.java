@@ -2,6 +2,7 @@ package BasicofJava;
 
 public class Assignment1 {
 
+	//Arrays.add();
 	/*
 	 * calculate the price and return
 	 * calculate the discount % for the price and print the discount amount

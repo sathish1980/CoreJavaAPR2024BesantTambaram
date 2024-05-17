@@ -15,7 +15,7 @@ public class SyncronizedThread {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		Thread t = new Thread()
+		/*Thread t = new Thread()
 		{
 	SyncronizedThread s = new SyncronizedThread();
 	public void run()
@@ -47,6 +47,13 @@ try {
 };
 t1.start();
 
-}
+}*/
+	
+		SyncronizedThread s = new SyncronizedThread();
+		Thread1 t = new Thread1(s);
+		Thread2 t1 = new Thread2(s);
+		t.start();
+		t1.start();
+	}
 
 }
